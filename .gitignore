@@ -1,0 +1,12 @@
+.bzr
+*~
+*.obj
+*.exe
+*.map
+*.ncb
+*.suo
+objs
+colorer.log
+Debug
+Release
+*.user

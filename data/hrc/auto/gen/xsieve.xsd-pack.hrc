@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hrc PUBLIC "-//Cail Lomecb//DTD Colorer HRC take5//EN" "http://colorer.sf.net/2003/hrc.dtd">
+<hrc xmlns="http://colorer.sf.net/2003/hrc" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://colorer.sf.net/2003/hrc http://colorer.sf.net/2003/hrc.xsd" version="take5">
+<!--
+  insert this define into HRC base catalog file (colorer.hrc)
+
+  <prototype name="xsieve.xsd-pack" group="group" description="xsieve.xsd-pack" targetNamespace="http://xsieve.sourceforge.net">
+    <location link="xsieve.xsd-pack.hrc"/>
+    <filename>/\./ix</filename>
+  </prototype>
+--><type name="xsieve.xsd-pack">
+<annotation>
+<documentation>
+           XSLT Generated HRC scheme for language 'xsieve.xsd-pack'
+           from XML Schema with xsd2hrc.xsl version 0.9.4 
+            Copyright (C) 2002-04 Cail Lomecb
+            Portions copyright (C) 2004-06 Eugene Efremov
+
+           Scheme parameters:
+             targetNamespace             : http://xsieve.sourceforge.net
+             hrctype                     : xsieve.xsd-pack
+             allow-common-attr           : yes
+             allow-any-attr              : no
+             allow-unknown-elements      : no
+             allow-unknown-root-elements : no
+             force-single-root           : yes
+             default prefixes            : (?{}(?{}s)(?{}:))
+               you can change them with entity 'nsprefix'
+             
+             </documentation>
+<documentation>
+          Schema documentation:
+    XML schema for XSieve elements.
+    Written for colorer.take5.
+    
+    (c) Eugene Efremov &lt;4mirror@mail.ru&gt;, 2006
+</documentation>
+<contributors><![CDATA[Eugene Efremov]]></contributors>
+</annotation>
+<import type="def"/>
+<region parent="xml:element.defined.start.name" name="element.start.name"/>
+<region parent="xml:element.defined.end.name" name="element.end.name"/>
+<region parent="xml:element.start.lt" name="element.start.lt"/>
+<region parent="xml:element.start.gt" name="element.start.gt"/>
+<region parent="xml:element.end.lt" name="element.end.lt"/>
+<region parent="xml:element.end.gt" name="element.end.gt"/>
+<region parent="element.start.name" name="element.nsprefix"/>
+<region parent="xml:element.nscolon" name="element.nscolon"/>
+<region parent="xml:Attribute.defined.name" name="Attribute.name"/>
+<region parent="xml:Attribute.nsprefix" name="Attribute.nsprefix"/>
+<region parent="xml:Attribute.nscolon" name="Attribute.nscolon"/>
+<region parent="xml:AttValue.defined" name="AttValue"/>
+<region parent="xml:AttValue.defined.start" name="AttValue.start"/>
+<region parent="xml:AttValue.defined.end" name="AttValue.end"/>
+<region description="Enumerated type values" parent="xml:Enumeration" name="Enumeration"/>
+<entity value="(?{}(?{}s)(?{}:))" name="ns-real-prefix"/>
+<entity value="(?{}(?{}s)(?{}:))" name="nsprefix"/>
+<entity value="(?{}(?{}s)(?{Attribute.nscolon}:))" name="attr-nsprefix"/>
+<scheme name="_hrc_int_elementContent">
+<block scheme="xml:elementContent2" region19="element.start.gt" region18="element.end.gt" region17="element.end.name" region16="element.nscolon" region15="element.nsprefix" region12="element.end.lt" region11="PairEnd" region07="element.start.name" region06="element.nscolon" region05="element.nsprefix" region02="element.start.lt" region01="PairStart" end="/( (&lt;\/) (\y3\b)?= ( (%xml:NCName;) (:) )? (%xml:Name;) \b \M \s* (&gt;?)                   | (\/ \M &gt;) )/x" start="/~( (&lt;) (  ((%xml:NCName;) (:) )? (%xml:Name;) ) \M &gt;?   )/x"/>
+<inherit scheme="xml:badChar"/>
+</scheme>
+<scheme name="_hrc_int_AttValue">
+<block region="AttValue" scheme="xml:AttValue.content.quot" region11="AttValue.end" region01="AttValue.start" region10="PairEnd" region00="PairStart" end="/(\y1)/" start="/(&quot;)/"/>
+<block region="AttValue" scheme="xml:AttValue.content.apos" region11="AttValue.end" region01="AttValue.start" region10="PairEnd" region00="PairStart" end="/(\y1)/" start="/(')/"/>
+</scheme>
+<scheme name="AttributeContent">
+<inherit scheme="xml:AttributeContent">
+<virtual subst-scheme="_hrc_int_AttValue" scheme="xml:AttValue"/>
+</inherit>
+</scheme>
+<!--custom schemes from '../../src/hrc/xsieve/src/custom.xsieve.xml'-->
+<scheme name="lisp-string-content">
+<inherit scheme="lisp:lisp"/>
+</scheme>
+<!--end custom-->
+<scheme name="init-element">
+<block end="/ &gt; /x" start="/\M &lt; (%nsprefix;init ([\s\/&gt;]|$) )/x" scheme="lisp-string-elementContent"/>
+</scheme>
+<scheme name="scheme-element">
+<block end="/ &gt; /x" start="/\M &lt; (%nsprefix;scheme ([\s\/&gt;]|$) )/x" scheme="lisp-string-elementContent"/>
+</scheme>
+<!--
+    XML schema for XSieve elements.
+    Written for colorer.take5.
+    
+    (c) Eugene Efremov <4mirror@mail.ru>, 2006
+
+-->
+<scheme name="lisp-string-content-old">
+<!--
+    Warning: RE pattern used. Possible compatibility faults
+    Original RE: .+-->
+<regexp priority="low" region="Enumeration" match="/.+/"/>
+</scheme>
+<scheme name="lisp-string-content-error">
+<inherit scheme="lisp-string-content"/>
+<inherit scheme="xml:badChar"/>
+</scheme>
+<scheme name="lisp-string-content-cdsect">
+<inherit scheme="lisp-string-content-error">
+<virtual subst-scheme="xml:badCDLiter" scheme="xml:badLiter"/>
+<virtual subst-scheme="def:empty" scheme="xml:Reference"/>
+</inherit>
+</scheme>
+<scheme name="lisp-string-Attributes"/>
+<scheme name="lisp-string-AttributeContent">
+<inherit scheme="AttributeContent">
+<virtual subst-scheme="lisp-string-content-error" scheme="xml:AttValue.content.stream"/>
+</inherit>
+</scheme>
+<scheme name="lisp-string-elementContent">
+<inherit scheme="_hrc_int_elementContent">
+<virtual subst-scheme="lisp-string-content-cdsect" scheme="xml:CDSect.content.stream"/>
+<virtual subst-scheme="lisp-string-content-error" scheme="xml:content.cdata.stream"/>
+<virtual subst-scheme="def:empty" scheme="xml:element"/>
+<virtual subst-scheme="lisp-string-Attributes" scheme="xml:Attribute.any"/>
+</inherit>
+</scheme>
+
+<scheme name="xsieve.xsd-pack-root"/>
+<scheme name="xsieve.xsd-pack-root-addref">
+<inherit scheme="xsieve.xsd-pack-root"/>
+</scheme>
+<scheme name="xsieve.xsd-pack">
+<inherit scheme="xml:singleroot">
+<virtual subst-scheme="xsieve.xsd-pack-root-addref" scheme="xml:element"/>
+</inherit>
+</scheme>
+</type>
+</hrc>

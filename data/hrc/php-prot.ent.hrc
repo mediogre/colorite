@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="Windows-1251"?>
+
+<param xmlns="http://colorer.sf.net/2003/hrc" description="I. Apache-specific Functions" name="Include-Apache-specific" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="II. Array Functions" name="Include-Array" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="III. Aspell functions" name="Include-Aspell" value="false"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="IV. BCMath Arbitrary Precision Mathematics Functions" name="Include-BCMath-Arbitrary-Precision-Mathematics" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="V. Bzip2 Compression Functions" name="Include-Bzip2-Compression" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="VI. Calendar Functions" name="Include-Calendar" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="VII. CCVS API Functions" name="Include-CCVS-API" value="false"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="VIII. COM support functions for Windows" name="Include-COM-supportfor-Windows" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="IX. Class/Object Functions" name="Include-Class-Object" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="X. ClibPDF Functions" name="Include-ClibPDF" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XI. Crack Functions" name="Include-Crack" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XII. CURL, Client URL Library Functions" name="Include-CURL-Client-URL-Library" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XIII. Cybercash Payment Functions" name="Include-Cybercash-Payment" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XIV. Cyrus IMAP administration Functions" name="Include-Cyrus-IMAP-administration" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XV. Character Type Functions" name="Include-Character-Type" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XVI. Database (dbm-style) Abstraction Layer Functions" name="Include-Database-dbm-style-Abstraction-Layer" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XVII. Date and Time Functions" name="Include-Date-and-Time" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XVIII. dBase Functions" name="Include-dBase" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XIX. DBM Functions" name="Include-DBM" value="false"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XX. dbx Functions" name="Include-dbx" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XXI. DB++ Functions" name="Include-DB" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XXII. Direct IO Functions" name="Include-Direct-IO" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XXIII. Directory Functions" name="Include-Directory" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XXIV. DOM XML Functions" name="Include-DOM-XML" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XXV. .NET Functions" name="Include-NET" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XXVI. Error Handling and Logging Functions" name="Include-Error-Handling-and-Logging" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XXVII. File Alteration Monitor Functions" name="Include-File-Alteration-Monitor" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XXVIII. FrontBase Functions" name="Include-FrontBase" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XXIX. filePro Functions" name="Include-filePro" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XXX. Filesystem Functions" name="Include-Filesystem" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XXXI. Forms Data Format Functions" name="Include-Forms-Data-Format" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XXXII. FriBiDi Functions" name="Include-FriBiDi" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XXXIII. FTP Functions" name="Include-FTP" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XXXIV. Function Handling Functions" name="Include-Function-Handling" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XXXV. Gettext" name="Include-Gettext" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XXXVI. GMP Functions" name="Include-GMP" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XXXVII. HTTP Functions" name="Include-HTTP" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XXXVIII. Hyperwave Functions" name="Include-Hyperwave" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XXXIX. Hyperwave API Functions" name="Include-Hyperwave-API" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XL. iconv Functions" name="Include-iconv" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XLI. Image Functions" name="Include-Image" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XLII. IMAP, POP3 and NNTP Functions" name="Include-IMAP-POP3-and-NNTP" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XLIII. Informix Functions" name="Include-Informix" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XLIV. InterBase Functions" name="Include-InterBase" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XLV. Ingres II Functions" name="Include-Ingres-II" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XLVI. IRC Gateway Functions" name="Include-IRC-Gateway" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XLVII. PHP / Java Integration" name="Include-PHP-Java-Integration" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XLVIII. LDAP Functions" name="Include-LDAP" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XLIX. LZF Functions" name="Include-LZF" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="L. Mail Functions" name="Include-Mail" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LI. mailparse Functions" name="Include-mailparse" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LII. Mathematical Functions" name="Include-Mathematical" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LIII. Multi-Byte String Functions" name="Include-Multi-Byte-String" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LIV. MCAL Functions" name="Include-MCAL" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LV. Mcrypt Encryption Functions" name="Include-Mcrypt-Encryption" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LVI. MCVE Payment Functions" name="Include-MCVE-Payment" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LVII. Mhash Functions" name="Include-Mhash" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LVIII. Mimetype Functions" name="Include-Mimetype" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LIX. Microsoft SQL Server Functions" name="Include-Microsoft-SQL-Server" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LX. Ming functions for Flash" name="Include-Mingfor-Flash" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXI. Miscellaneous Functions" name="Include-Miscellaneous" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXII. mnoGoSearch Functions" name="Include-mnoGoSearch" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXIII. mSQL Functions" name="Include-mSQL" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXIV. MySQL Functions" name="Include-MySQL" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXV. Improved MySQL Extension" name="Include-Improved-MySQL-Extension" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXVI. Mohawk Software Session Handler Functions" name="Include-Mohawk-Software-Session-Handler" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXVII. muscat Functions" name="Include-muscat" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXVIII. Network Functions" name="Include-Network" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXIX. Ncurses Terminal Screen Control Functions" name="Include-Ncurses-Terminal-Screen-Control" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXX. Lotus Notes Functions" name="Include-Lotus-Notes" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXXI. NSAPI-specific Functions" name="Include-NSAPI-specific" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXXII. Unified ODBC Functions" name="Include-Unified-ODBC" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXXIII. Object Aggregation/Composition Functions" name="Include-Object-Aggregation-Composition" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXXIV. Oracle 8 new Functions" name="Include-Oracle-8-new" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXXV. OpenSSL Functions" name="Include-OpenSSL" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXXVI. Oracle Functions" name="Include-Oracle" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXXVII. Ovrimos SQL Functions" name="Include-Ovrimos-SQL" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXXVIII. Output Control Functions" name="Include-Output-Control" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXXIX. Object property and method call overloading" name="Include-Object-property-and-method-call-overloading" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXXX. PDF Functions" name="Include-PDF" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXXXI. Verisign Payflow Pro Functions" name="Include-Verisign-Payflow-Pro" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXXXII. PHP Options&amp;Information" name="Include-PHP-Options-Information" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXXXIII. POSIX Functions" name="Include-POSIX" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXXXIV. PostgreSQL Functions" name="Include-PostgreSQL" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXXXV. Process Control Functions" name="Include-Process-Control" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXXXVI. Program Execution Functions" name="Include-Program-Execution" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXXXVII. Printer Functions" name="Include-Printer" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXXXVIII. Pspell Functions" name="Include-Pspell" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="LXXXIX. GNU Readline" name="Include-GNU-Readline" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XC. GNU Recode Functions" name="Include-GNU-Recode" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XCI. Regular Expression Functions (Perl-Compatible)" name="Include-Regular-Expression-Perl-Compatible" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XCII. qtdom Functions" name="Include-qtdom" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XCIII. Regular Expression Functions (POSIX Extended)" name="Include-Regular-Expression-POSIX-Extended" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XCIV. Semaphore, Shared Memory and IPC Functions" name="Include-Semaphore-Shared-Memory-and-IPC" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XCV. SESAM Database Functions" name="Include-SESAM-Database" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XCVI. Session Handling Functions" name="Include-Session-Handling" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XCVII. Shared Memory Functions" name="Include-Shared-Memory" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XCVIII. SimpleXML Functions" name="Include-SimpleXML" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="XCIX. SOAP Functions" name="Include-SOAP" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="C. SQLite" name="Include-SQLite" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CI. Shockwave Flash Functions" name="Include-Shockwave-Flash" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CII. SNMP Functions" name="Include-SNMP" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CIII. Socket Functions" name="Include-Socket" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CIV. Standard PHP Library (SPL) Functions" name="Include-Standard-PHP-Library-SPL" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CV. Stream Functions" name="Include-Stream" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CVI. String Functions" name="Include-String" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CVII. Sybase Functions" name="Include-Sybase" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CVIII. TCP Wrappers Functions" name="Include-TCP-Wrappers" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CIX. Tidy Functions" name="Include-Tidy" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CX. Tokenizer Functions" name="Include-Tokenizer" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CXI. URL Functions" name="Include-URL" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CXII. Variable Functions" name="Include-Variable" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CXIII. vpopmail Functions" name="Include-vpopmail" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CXIV. W32api Functions" name="Include-W32api" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CXV. WDDX Functions" name="Include-WDDX" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CXVI. XML Parser Functions" name="Include-XML-Parser" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CXVII. XML-RPC Functions" name="Include-XML-RPC" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CXVIII. xdiff Functions" name="Include-xdiff" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CXIX. XSLT Functions" name="Include-XSLT" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CXX. YAZ Functions" name="Include-YAZ" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CXXI. YP/NIS Functions" name="Include-YP-NIS" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CXXII. Zip File Functions (Read Only Access)" name="Include-Zip-File-Read-Only-Access" value="true"/>
+<param xmlns="http://colorer.sf.net/2003/hrc" description="CXXIII. Zlib Compression Functions" name="Include-Zlib-Compression" value="true"/>

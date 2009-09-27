@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hrc PUBLIC "-//Cail Lomecb//DTD Colorer HRC take5//EN" "http://colorer.sf.net/2003/hrc.dtd">
+<hrc xmlns="http://colorer.sf.net/2003/hrc" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://colorer.sf.net/2003/hrc http://colorer.sf.net/2003/hrc.xsd" version="take5">
+<!--
+  insert this define into HRC base catalog file (colorer.hrc)
+
+  <prototype name="hrd" group="group" description="hrd" targetNamespace="http://colorer.sf.net/2003/hrd">
+    <location link="hrd.hrc"/>
+    <filename>/\./ix</filename>
+  </prototype>
+--><type name="hrd">
+<annotation>
+<documentation>
+           XSLT Generated HRC scheme for language 'hrd'
+           from XML Schema with xsd2hrc.xsl version 0.9.4 
+            Copyright (C) 2002-04 Cail Lomecb
+            Portions copyright (C) 2004-06 Eugene Efremov
+
+           Scheme parameters:
+             targetNamespace             : http://colorer.sf.net/2003/hrd
+             hrctype                     : hrd
+             allow-common-attr           : yes
+             allow-any-attr              : no
+             allow-unknown-elements      : no
+             allow-unknown-root-elements : no
+             force-single-root           : yes
+             default prefixes            : (?{}(?{}:))?
+               you can change them with entity 'nsprefix'
+             
+             </documentation>
+<documentation>
+          Schema documentation:</documentation>
+<contributors><![CDATA[Cail Lomecb, Eugene Efremov]]></contributors>
+</annotation>
+<import type="def"/>
+<region parent="xml:element.defined.start.name" name="element.start.name"/>
+<region parent="xml:element.defined.end.name" name="element.end.name"/>
+<region parent="xml:element.start.lt" name="element.start.lt"/>
+<region parent="xml:element.start.gt" name="element.start.gt"/>
+<region parent="xml:element.end.lt" name="element.end.lt"/>
+<region parent="xml:element.end.gt" name="element.end.gt"/>
+<region parent="element.start.name" name="element.nsprefix"/>
+<region parent="xml:element.nscolon" name="element.nscolon"/>
+<region parent="xml:Attribute.defined.name" name="Attribute.name"/>
+<region parent="xml:Attribute.nsprefix" name="Attribute.nsprefix"/>
+<region parent="xml:Attribute.nscolon" name="Attribute.nscolon"/>
+<region parent="xml:AttValue.defined" name="AttValue"/>
+<region parent="xml:AttValue.defined.start" name="AttValue.start"/>
+<region parent="xml:AttValue.defined.end" name="AttValue.end"/>
+<region description="Enumerated type values" parent="xml:Enumeration" name="Enumeration"/>
+<entity value="(?{}(?{}:))" name="ns-real-prefix"/>
+<entity value="(?{}(?{}:))?" name="nsprefix"/>
+<entity value="(?{}(?{Attribute.nscolon}:))" name="attr-nsprefix"/>
+<scheme name="_hrc_int_elementContent">
+<block scheme="xml:elementContent2" region19="element.start.gt" region18="element.end.gt" region17="element.end.name" region16="element.nscolon" region15="element.nsprefix" region12="element.end.lt" region11="PairEnd" region07="element.start.name" region06="element.nscolon" region05="element.nsprefix" region02="element.start.lt" region01="PairStart" end="/( (&lt;\/) (\y3\b)?= ( (%xml:NCName;) (:) )? (%xml:Name;) \b \M \s* (&gt;?)                   | (\/ \M &gt;) )/x" start="/~( (&lt;) (  ((%xml:NCName;) (:) )? (%xml:Name;) ) \M &gt;?   )/x"/>
+<inherit scheme="xml:badChar"/>
+</scheme>
+<scheme name="_hrc_int_AttValue">
+<block region="AttValue" scheme="xml:AttValue.content.quot" region11="AttValue.end" region01="AttValue.start" region10="PairEnd" region00="PairStart" end="/(\y1)/" start="/(&quot;)/"/>
+<block region="AttValue" scheme="xml:AttValue.content.apos" region11="AttValue.end" region01="AttValue.start" region10="PairEnd" region00="PairStart" end="/(\y1)/" start="/(')/"/>
+</scheme>
+<scheme name="AttributeContent">
+<inherit scheme="xml:AttributeContent">
+<virtual subst-scheme="_hrc_int_AttValue" scheme="xml:AttValue"/>
+</inherit>
+</scheme>
+<!--custom schemes from '../../src/hrc/colorer/src/custom.colorer.xml'-->
+<scheme name="region-name-content">
+<regexp match="/~(%xml:NCName;)(\:)(%xml:NCName;) \b/ix" region1="xmlschema:Scheme.nsprefix" region2="xmlschema:Scheme.nscolon" region3="xmlschema:Scheme.name"/>
+</scheme>
+<scheme name="color-content">
+<regexp match="/(\#)([\dA-Fa-f]{6}|[\dA-Fa-f])/" region1="def:NumberPrefix" region2="def:NumberHex"/>
+</scheme>
+<scheme name="style-content">
+<regexp match="/\d/" region="def:Number"/>
+</scheme>
+<!--end custom-->
+<scheme name="hrd-element">
+<block end="/ &gt; /x" start="/\M &lt; (%nsprefix;hrd ([\s\/&gt;]|$) )/x" scheme="hrd-elementContent"/>
+</scheme>
+<scheme name="hrd-content">
+<block end="/ &gt; /x" start="/\M &lt; (%nsprefix;documentation ([\s\/&gt;]|$) )/x" scheme="documentation-elementContent"/>
+<block end="/ &gt; /x" start="/\M &lt; (%nsprefix;assign ([\s\/&gt;]|$) )/x" scheme="assign-elementContent"/>
+</scheme>
+<scheme name="hrd-content-error">
+<inherit scheme="hrd-content"/>
+<inherit scheme="xml:badChar"/>
+</scheme>
+<scheme name="hrd-content-cdsect">
+<inherit scheme="hrd-content-error">
+<virtual subst-scheme="xml:badCDLiter" scheme="xml:badLiter"/>
+<virtual subst-scheme="def:empty" scheme="xml:Reference"/>
+</inherit>
+</scheme>
+<scheme name="hrd-Attributes"/>
+<scheme name="hrd-elementContent">
+<inherit scheme="_hrc_int_elementContent">
+<virtual subst-scheme="hrd-content" scheme="xml:element"/>
+<virtual subst-scheme="xml:badChar" scheme="xml:content.cdata"/>
+<virtual subst-scheme="hrd-Attributes" scheme="xml:Attribute.any"/>
+</inherit>
+</scheme>
+<scheme name="documentation-content">
+<regexp region="def:Error" match="/ &lt; (%ns-real-prefix;%xml:NCName; ([\s\/&gt;]|$) )/x"/>
+<inherit scheme="xml:element"/>
+</scheme>
+<scheme name="documentation-content-error">
+<inherit scheme="documentation-content"/>
+<inherit scheme="xml:badChar"/>
+</scheme>
+<scheme name="documentation-content-cdsect">
+<inherit scheme="documentation-content-error">
+<virtual subst-scheme="xml:badCDLiter" scheme="xml:badLiter"/>
+<virtual subst-scheme="def:empty" scheme="xml:Reference"/>
+</inherit>
+</scheme>
+<scheme name="documentation-Attributes"/>
+<scheme name="documentation-elementContent">
+<inherit scheme="_hrc_int_elementContent">
+<virtual subst-scheme="documentation-content" scheme="xml:element"/>
+<virtual subst-scheme="documentation-Attributes" scheme="xml:Attribute.any"/>
+</inherit>
+</scheme>
+<scheme name="assign-content"/>
+<scheme name="assign-content-error">
+<inherit scheme="assign-content"/>
+<inherit scheme="xml:badChar"/>
+</scheme>
+<scheme name="assign-content-cdsect">
+<inherit scheme="assign-content-error">
+<virtual subst-scheme="xml:badCDLiter" scheme="xml:badLiter"/>
+<virtual subst-scheme="def:empty" scheme="xml:Reference"/>
+</inherit>
+</scheme>
+<scheme name="assign-Attributes">
+<block region02="Attribute.name" end="/[&quot;']?#1/" start="/(\s?#1|^)(name)\M([\s\=]|$)/x" scheme="region-name-AttributeContent"/>
+<block region02="Attribute.name" end="/[&quot;']?#1/" start="/(\s?#1|^)(fore)\M([\s\=]|$)/x" scheme="color-AttributeContent"/>
+<block region02="Attribute.name" end="/[&quot;']?#1/" start="/(\s?#1|^)(back)\M([\s\=]|$)/x" scheme="color-AttributeContent"/>
+<block region02="Attribute.name" end="/[&quot;']?#1/" start="/(\s?#1|^)(style)\M([\s\=]|$)/x" scheme="style-AttributeContent"/>
+<block region02="Attribute.name" end="/[&quot;']?#1/" start="/(\s?#1|^)(stext)\M([\s\=]|$)/x" scheme="xmlschema:string-AttributeContent"/>
+<block region02="Attribute.name" end="/[&quot;']?#1/" start="/(\s?#1|^)(etext)\M([\s\=]|$)/x" scheme="xmlschema:string-AttributeContent"/>
+<block region02="Attribute.name" end="/[&quot;']?#1/" start="/(\s?#1|^)(sback)\M([\s\=]|$)/x" scheme="xmlschema:string-AttributeContent"/>
+<block region02="Attribute.name" end="/[&quot;']?#1/" start="/(\s?#1|^)(eback)\M([\s\=]|$)/x" scheme="xmlschema:string-AttributeContent"/>
+</scheme>
+<scheme name="assign-elementContent">
+<inherit scheme="_hrc_int_elementContent">
+<virtual subst-scheme="assign-content" scheme="xml:element"/>
+<virtual subst-scheme="xml:badChar" scheme="xml:content.cdata"/>
+<virtual subst-scheme="assign-Attributes" scheme="xml:Attribute.any"/>
+</inherit>
+</scheme>
+<scheme name="region-name-content-old">
+<!--
+    Warning: RE pattern used. Possible compatibility faults
+    Original RE: \i\c*\:\i\c*-->
+<regexp priority="low" region="Enumeration" match="/[%xml:NCNameStartChar;][%xml:NCNameChar;]*\:[%xml:NCNameStartChar;][%xml:NCNameChar;]*/"/>
+</scheme>
+<scheme name="region-name-content-error">
+<inherit scheme="region-name-content"/>
+<inherit scheme="xml:badChar"/>
+</scheme>
+<scheme name="region-name-content-cdsect">
+<inherit scheme="region-name-content-error">
+<virtual subst-scheme="xml:badCDLiter" scheme="xml:badLiter"/>
+<virtual subst-scheme="def:empty" scheme="xml:Reference"/>
+</inherit>
+</scheme>
+<scheme name="region-name-Attributes"/>
+<scheme name="region-name-AttributeContent">
+<inherit scheme="AttributeContent">
+<virtual subst-scheme="region-name-content-error" scheme="xml:AttValue.content.stream"/>
+</inherit>
+</scheme>
+<scheme name="region-name-elementContent">
+<inherit scheme="_hrc_int_elementContent">
+<virtual subst-scheme="region-name-content-cdsect" scheme="xml:CDSect.content.stream"/>
+<virtual subst-scheme="region-name-content-error" scheme="xml:content.cdata.stream"/>
+<virtual subst-scheme="def:empty" scheme="xml:element"/>
+<virtual subst-scheme="region-name-Attributes" scheme="xml:Attribute.any"/>
+</inherit>
+</scheme>
+<scheme name="color-content-old">
+<!--
+    Warning: RE pattern used. Possible compatibility faults
+    Original RE: #?[\dA-Fa-f]{1,6}-->
+<regexp priority="low" region="Enumeration" match="/\#?[\dA-Fa-f]{1,6}/"/>
+</scheme>
+<scheme name="color-content-error">
+<inherit scheme="color-content"/>
+<inherit scheme="xml:badChar"/>
+</scheme>
+<scheme name="color-content-cdsect">
+<inherit scheme="color-content-error">
+<virtual subst-scheme="xml:badCDLiter" scheme="xml:badLiter"/>
+<virtual subst-scheme="def:empty" scheme="xml:Reference"/>
+</inherit>
+</scheme>
+<scheme name="color-Attributes"/>
+<scheme name="color-AttributeContent">
+<inherit scheme="AttributeContent">
+<virtual subst-scheme="color-content-error" scheme="xml:AttValue.content.stream"/>
+</inherit>
+</scheme>
+<scheme name="color-elementContent">
+<inherit scheme="_hrc_int_elementContent">
+<virtual subst-scheme="color-content-cdsect" scheme="xml:CDSect.content.stream"/>
+<virtual subst-scheme="color-content-error" scheme="xml:content.cdata.stream"/>
+<virtual subst-scheme="def:empty" scheme="xml:element"/>
+<virtual subst-scheme="color-Attributes" scheme="xml:Attribute.any"/>
+</inherit>
+</scheme>
+<scheme name="style-content-old">
+<!--
+    Warning: RE pattern used. Possible compatibility faults
+    Original RE: \d-->
+<regexp priority="low" region="Enumeration" match="/\d/"/>
+</scheme>
+<scheme name="style-content-error">
+<inherit scheme="style-content"/>
+<inherit scheme="xml:badChar"/>
+</scheme>
+<scheme name="style-content-cdsect">
+<inherit scheme="style-content-error">
+<virtual subst-scheme="xml:badCDLiter" scheme="xml:badLiter"/>
+<virtual subst-scheme="def:empty" scheme="xml:Reference"/>
+</inherit>
+</scheme>
+<scheme name="style-Attributes"/>
+<scheme name="style-AttributeContent">
+<inherit scheme="AttributeContent">
+<virtual subst-scheme="style-content-error" scheme="xml:AttValue.content.stream"/>
+</inherit>
+</scheme>
+<scheme name="style-elementContent">
+<inherit scheme="_hrc_int_elementContent">
+<virtual subst-scheme="style-content-cdsect" scheme="xml:CDSect.content.stream"/>
+<virtual subst-scheme="style-content-error" scheme="xml:content.cdata.stream"/>
+<virtual subst-scheme="def:empty" scheme="xml:element"/>
+<virtual subst-scheme="style-Attributes" scheme="xml:Attribute.any"/>
+</inherit>
+</scheme>
+
+<scheme name="hrd-root">
+<annotation>
+<documentation>
+               You can replace these elements with needed single root element
+               with customizing HRC generation process.
+              </documentation>
+</annotation>
+<inherit scheme="hrd-element"/>
+</scheme>
+<scheme name="hrd-root-addref">
+<inherit scheme="hrd-root"/>
+</scheme>
+<scheme name="hrd">
+<inherit scheme="xml:singleroot">
+<virtual subst-scheme="hrd-root-addref" scheme="xml:element"/>
+</inherit>
+</scheme>
+</type>
+</hrc>
